@@ -1,0 +1,190 @@
+#root ,html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app{
+    position: relative;
+    height: 100%;
+    background: url('https://static.vecteezy.com/system/resources/previews/000/633/055/original/lamp-aladdin-with-gin-the-magic-lamp-of-aladdin-ready-for-your-design-greeting-card-banner-vector.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.card{
+  position: absolute;
+  bottom: 5rem;
+  right: 58rem;
+    background-color: rgb(84, 198, 236);
+ 
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:20%;
+    box-shadow: 0 10px 10px 0 rgba(32, 30, 30, 0.16);
+    padding: 2%;
+    
+    padding: 10px;
+    /* border: 7px solid black; */
+}
+h2{
+  font-family: 'Roboto Mono', monospace;
+    display: flex;
+    align-items: center;
+    height: 580px;
+}
+h1{
+  font-family: 'Rubik', sans-serif;
+}
+button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40%;
+    width: 50%;
+    opacity: 1;
+    background-color: #ffffff;
+    border: transparent;
+    box-shadow: 0 5px 10px 0 rgba(32, 30, 30, 0.16);
+  }
+  .button:hover{
+    color: black;
+    background-color: rgb(228, 228, 39);
+    
+
+  }
+
+  button span {
+    font-family: 'Rubik', sans-serif;
+    color:black;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  .button span:hover{
+    color: black;
+  }
+
+  .button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    
+  .button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+    
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(12deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-12deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(6px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-6px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(6px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }  
+ 
+  
+@media screen and (max-width:1388px){
+ .card{
+  bottom: 5rem;
+  right: 40rem;
+
+ } 
+ h2{
+  height: 500px;
+ }
+
+}
+
+@media screen and (max-width:616px){
+ .card{ bottom: 3rem;
+    right: 15rem;
+    width: 36%;
+    height: 38%;
+    position: fixed;
+
+ }
+ .app{
+   position: unset;
+ }
+ h2{
+  font-size: 15px;
+ }
+ h1{
+   font-size: 20px;
+ }
+ .button span{
+   font-size: 9px;
+ }
+
+}
+@media screen and (max-width:435px){
+  .card{
+    height: 224px;
+    width: 149px;
+  }
+}
+
+@media screen and (max-width:410px){
+  .card{
+    bottom: 1rem;
+    right: 11rem;
+  }
+}
+@media screen and (max-width:390px){
+  .card{
+    bottom: 4rem;
+    right: 11rem;
+  }
+}
+@media screen and(max-width:492px){
+  .card{
+    width: 36%;
+    height: 28%;
+  }
+}
